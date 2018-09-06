@@ -188,3 +188,12 @@ a {
 .restore:focus {
     text-decoration: none;
 }
+
+.inner-page {
+    color: #000000;
+    background-color: #f9f6f3;
+    background-image: url("../img/back.jpg");
+    background-position: 0 0;
+    background-repeat: repeat;
+    
+}
