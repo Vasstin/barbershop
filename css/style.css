@@ -220,6 +220,14 @@ catalog-item h3 {
     background-color: #ffffff;
 }
 
+.product-photos {
+    width: 460px;
+}
+
+.product-info {
+    width: 390px;
+}
+
 .product-photo-preview {
     list-style: none;
 }
