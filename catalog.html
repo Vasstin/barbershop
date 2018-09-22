@@ -9,7 +9,7 @@
     </head>
     <body class="inner-page">
                <header class="main-header">
-            <nav class="main-navigation">
+            <nav class="main-navigation container">
                 <a class="main-header-logo" href="index.html">
                     <img src="img/logo.svg" width="111" height="24" alt="Логотип барбершопа "Бородинский"">
                 </a>
@@ -34,14 +34,14 @@
                 <li><a href="catalog.html">Магазин</a></li>
                 <li class="breadcrumbs-current">Средства для ухода</li>
             </ul>
-            <section class="filters">
-                <h2 class="visually-hidden">Фильтры товаров</h2>
-                <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+            <div class="catalog-columns">
+                <section class="filters">
+                    <h2 class="visually-hidden">Фильтры товаров</h2>
+                    <form class="filter" method="get" action="https://echo.htmlacademy.ru">
                     <fieldset>
                         <legend>Производители:</legend>
                         <ul>
                             <li  class="filter-option">
-                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="baxter-of-california" id="filter-baxter-of-california" checked>
                                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="baxter-of-california" id="filter-baxter-of-california" checked>
                              <label for="filter-baxter-of-california">Baxter of California</label>   
                             </li>
@@ -198,7 +198,8 @@
                     <li class="pagination-item"><a href="#">3</a></li>
                     <li class="pagination-item"><a href="#">4</a></li>
                 </ul>
-            </section>
+                </section>
+                </div>
         </main>
         <footer class="main-footer"> 
             <p class="footer-contacts">
@@ -243,6 +244,9 @@
             </form>
             <button class="modal-close" type="button">Закрыть</button>
         </section>
+    
+    
     </body>
     
 </html>
+
