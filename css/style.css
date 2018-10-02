@@ -494,6 +494,7 @@ catalog-item h3 {
     line-height: 42px;
 }
 
+
 .login-form input[type="text"],
 .login-form input[type="password"] {
     font: inherit;
@@ -547,6 +548,7 @@ catalog-item h3 {
 }
 
 
+
 .main-navigation {
     display: flex;
     flex-direction: column;
@@ -556,7 +558,6 @@ catalog-item h3 {
 .inner-page .main-navigation {
     align-items: flex-start;
     flex-direction: row;
-/*    height: 74px;                     !!!!!!!!!!!!!!!*/
 }
 
 .main-header-logo {
@@ -998,6 +999,15 @@ catalog-item h3 {
     background-repeat: repeat;
     box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7)
 }
+.modal iframe{
+    position: fixed;
+    z-index: 10;
+}
+
+.modal modal-map-p {
+    position: fixed;
+    z-index: 9;
+}
 
 .modal-login {
     display: none;
@@ -1184,4 +1194,28 @@ catalog-item h3 {
 
 .modal-map p {
     margin: 0;
+}
+
+@keyframes bounce {
+    0% { transform: translateY(-2000px);}
+    70% { transform: translateY(30px);}
+    90% {transform: translateY(-10px);}
+    100% {transform: translateY(0);}
+}
+
+@keyframes shake {
+    0%, 100%                    {transform: translateX(0);}
+    10%, 30%, 50%, 70%, 90%     {transform: translateX(-10px);}
+    20%, 40%, 60%, 80%, 100%    {transform: translateX(10px);}
+}
+
+.modal-show {
+    display: block;
+    animation-name: bounce;
+    animation-duration: 0.6s;
+}
+
+.modal-error {
+    animation-name:  shake;
+    animation-duration: 0.6s;
 }
